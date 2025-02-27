@@ -1,0 +1,56 @@
+/* styles.css */
+
+/* Basic styling for the body and page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Menu */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6347; /* Change font color when hovered */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Change background color when scrolling */
+nav.scrolled {
+    background-color: #222;
+}
+
+/* Content section styling */
+section {
+    padding: 50px;
+    text-align: center;
+    font-size: 24px;
+}
